@@ -1,12 +1,12 @@
 import { data } from '../data/data'
 import React, { useState } from 'react'
 
-const Foods = () => {
+const Products = () => {
 
-const [foods, setFoods] = useState(data);
+const [products, setProducts] = useState(data);
 
 const filterType = (category) => {
-    setFoods(
+    setProducts(
         data.filter(item => item.category === category)
     );
 }
@@ -14,7 +14,7 @@ const filterType = (category) => {
 // filterprice
 
 const filterPrice = (price) => {
-    setFoods(
+    setProducts(
         data.filter(item => item.price === price)
     );
 }
@@ -31,7 +31,7 @@ const filterPrice = (price) => {
         <div>
             <p className='text-gray-700 font-bold'>Product Filter</p>
             <div className='flex flex-wrap'>
-                <button onClick={() => setFoods(data)} className='m-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white'>all</button>
+                <button onClick={() => setProducts(data)} className='m-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white'>all</button>
                 <button onClick={() => filterType('shirts')} className='m-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white'>shirts</button>
                 <button onClick={() => filterType('pants')} className='m-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white'>pants</button>
                 <button onClick={() => filterType('shorts')} className='m-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white'>shorts</button>
@@ -57,7 +57,7 @@ const filterPrice = (price) => {
         {/* display foods */}
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
             {
-                foods.map((item, index) => (
+                Products.map((item, index) => (
                     <div key={index} className="border shadow-lg rounded-lg hover:scale-105 duration-300">
                         <img className='w-full h-[200px] object-cover rounded-t-lg' src={item.image} alt={item.name} />
                         <div className='flex justify-between px-2 py-4'>
@@ -73,4 +73,4 @@ const filterPrice = (price) => {
   )
 }
 
-export default Foods
+export default Products

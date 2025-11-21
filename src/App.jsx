@@ -1,14 +1,11 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import HeadlineCards from './components/HeadlineCards';
-import Foods from './components/Foods';
+import Products from './components/Products';
 import Category from './components/Category';
 import Connect from './components/Connect';
-// import Slider from './components/Slider';
-// import Logo from './midea/Logo.jpg';
 
-// const username = "John Doe";
-// const day = new Date().toLocaleDateString();
+
 
 function App() {
 
@@ -17,10 +14,9 @@ function App() {
       <Navbar />
       <Hero />
       <HeadlineCards />
-      <Foods />
+      <Products />
       <Category />
       <Connect />
-      {/* <Slider /> */}
     </div>
   )
 }
