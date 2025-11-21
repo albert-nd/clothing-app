@@ -1,9 +1,11 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import HeadlineCards from './components/HeadlineCards';
 import Products from './components/Products';
 import Category from './components/Category';
 import Connect from './components/Connect';
+import Help from "./components/help/Help";
 
 
 
@@ -17,6 +19,11 @@ function App() {
       <Products />
       <Category />
       <Connect />
+
+      <Routes>
+        <Route path="/Help" element={<Help />} />
+      </Routes>
+
     </div>
   )
 }
