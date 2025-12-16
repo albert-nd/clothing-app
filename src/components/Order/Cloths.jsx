@@ -19,25 +19,27 @@ const Cloths = () => {
       </h1>
 
       {/* Filter */}
-      <div className='max-w-[1640px] mx-auto flex justify-between p-4'>
-        <div>
+      <div className='max-w-[1640px] mx-auto flex justify-between gap-6 md:gap-4 sm:gap-2 '>
+        <div className='mt-4'>
           <p className='text-white font-bold'>Filter Type</p>
           <div className='flex justify-between flex-wrap'>
-            <button onClick={() => setCloths(data)} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>All</button>
-            <button onClick={() => filterType('burger')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>Burger</button>
-            <button onClick={() => filterType('pizza')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>Pizza</button>
-            <button onClick={() => filterType('chicken')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>Chicken</button>
-            <button onClick={() => filterType('salad')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>Salad</button>
+            <button onClick={() => setCloths(data)} className='my-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>All</button>
+            <button onClick={() => filterType('shirts')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>shirts</button>
+            <button onClick={() => filterType('pants')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>pants</button>
+            <button onClick={() => filterType('shorts')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>shorts</button>
+            <button onClick={() => filterType('sports')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>Sports</button>
+            <button onClick={() => filterType('foot wear')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>foot wear</button>
+            <button onClick={() => filterType('accessories')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>accessories</button>
           </div>
         </div>
 
-        <div>
+        <div className='mt-4'>
           <p className='text-white font-bold'>Filter Price</p>
-          <div className='flex justify-between max-w-[390px] w-full mr-9'>
-            <button onClick={() => filterPrice('$20')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$20</button>
-            <button onClick={() => filterPrice('$100')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$100</button>
-            <button onClick={() => filterPrice('$200')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$200</button>
-            <button onClick={() => filterPrice('$800')} className='m-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$800</button>
+          <div className='flex justify-between flex-wrap'>
+            <button onClick={() => filterPrice('$20')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$20</button>
+            <button onClick={() => filterPrice('$100')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$100</button>
+            <button onClick={() => filterPrice('$200')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$200</button>
+            <button onClick={() => filterPrice('$800')} className='mt-1 border-white text-white hover:bg-blue-900 hover:text-white duration-300'>$800</button>
           </div>
         </div>
       </div>

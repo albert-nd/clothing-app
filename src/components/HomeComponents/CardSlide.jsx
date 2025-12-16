@@ -15,7 +15,7 @@ const CardSlide = () => {
   ];
 
   return (
-    <div className="max-w-[1800px] mx-auto pt-[100px] pb-7 ">
+    <div className="max-w-[1800px] mx-auto pt-[500px] sm:pt-[300px] md:pt-[200px] pb-10 px-4">
       <div className="w-full h-[300px] sm:h-[380px] md:h-[450px] overflow-hidden shadow-xl">
 
         <Swiper
